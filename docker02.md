@@ -1,5 +1,6 @@
 # docker container run (= docker run)
-도커 이미지로부터 새 컨테이너를 생성하고 실행하는 명령어
+도커 이미지로부터 새 컨테이너를 생성하고 실행하는 명령어  
+(단, 로컬에 이미지가 없으면 일단 pull(다운로드)부터 실행 후)
   
 ```
 docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
