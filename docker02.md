@@ -1,6 +1,6 @@
 # docker container run (= docker run)
 도커 이미지로부터 새 컨테이너를 생성하고 실행하는 명령어  
-(단, 로컬에 이미지가 없으면 일단 pull(다운로드)부터 실행 후)
+(단, 로컬에 이미지가 없으면 일단 원격 repository에서 pull(다운로드)부터 실행 후)
   
 ```
 docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
@@ -19,4 +19,4 @@ docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
 |-t, --tty|가상-TTY(입출력 드라이버) 할당|
 |--link|다른 컨테이너에 연결|
 |--name|컨테이너에 이름 할당|
-|--rm|프로세스 종료시 컨테이너 및 연결된 익명 저장 공간 자동 삭제|
+|--rm|프로세스 종료시 '컨테이너' 및 연결된 익명 저장 공간 자동 삭제 (이미지 삭제 아님)|
